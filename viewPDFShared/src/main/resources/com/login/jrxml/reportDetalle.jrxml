@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportRecargas" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="651ca489-7863-4dfc-b422-932a32f7fa75">
+	<property name="ireport.zoom" value="1.1000000000000019"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="titleDetalle" class="java.lang.String"/>
+	<parameter name="inicio" class="java.lang.String"/>
+	<parameter name="fin" class="java.lang.String"/>
+	<parameter name="puntoVenta" class="java.lang.String"/>
+	<parameter name="asesor" class="java.lang.String"/>
+	<parameter name="region" class="java.lang.String"/>
+	<parameter name="fechaCorte" class="java.lang.String"/>
+	<parameter name="compania" class="java.lang.String"/>
+	<parameter name="claseServicio" class="java.lang.String"/>
+	<parameter name="turno" class="java.lang.String"/>
+	<parameter name="marca" class="java.lang.String"/>
+	<parameter name="movimientos" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<parameter name="parameter2" class="java.lang.String"/>
+	<parameter name="parameter3" class="java.lang.String"/>
+	<parameter name="parameter4" class="java.lang.String"/>
+	<parameter name="parameter5" class="java.lang.String"/>
+	<parameter name="parameter6" class="java.lang.String"/>
+	<parameter name="parameter7" class="java.lang.String"/>
+	<parameter name="parameter8" class="java.lang.String"/>
+	<parameter name="parameter9" class="java.lang.String"/>
+	<parameter name="parameter10" class="java.lang.String"/>
+	<parameter name="parameter11" class="java.lang.String"/>
+	<field name="uid" class="java.lang.String"/>
+	<field name="tipoTarjeta" class="java.lang.String"/>
+	<field name="noOperacion" class="java.lang.Long"/>
+	<field name="importe" class="java.lang.Double"/>
+	<field name="importeIvaORegalo" class="java.lang.Double"/>
+	<field name="importeTotal" class="java.lang.Double"/>
+	<field name="importeVenta" class="java.lang.String"/>
+	<field name="fechaHoraVenta" class="java.lang.String"/>
+	<field name="fechaHoraTurno" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="289" splitType="Stretch">
+			<textField>
+				<reportElement x="149" y="40" width="308" height="20" uuid="be079826-8a05-4718-bc87-ca93d1e00789"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{inicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="60" width="308" height="20" uuid="cbb2a0c9-2236-4ae3-a92d-5ef98d918a26"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="80" width="308" height="20" uuid="a25ac08b-7d6c-4e0d-af69-2783136d3b4a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{puntoVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="100" width="308" height="20" uuid="4540bc53-67fc-474a-92cd-17d282e48ad8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{asesor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="126" width="308" height="20" uuid="ae6dc6d7-e8ce-406f-86c7-63f8754c89dc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{region}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="146" width="308" height="20" uuid="a28d40aa-e7f4-4594-b1c6-a646df069017"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaCorte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="166" width="308" height="20" uuid="501c2875-b249-4b73-8594-004013347afe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{compania}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="186" width="308" height="20" uuid="32567471-abc7-41fc-ab66-6e786ced3a74"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{claseServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="212" width="308" height="20" uuid="7107c3b2-d2a8-410d-bf56-608264556250"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{turno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="232" width="308" height="20" uuid="dd39fb59-0922-4cd7-b6d1-0bb3029f617d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{marca}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="752" height="40" uuid="757ceaff-3194-4697-9688-2f40c6767a34"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Center" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter1}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="40" width="149" height="20" uuid="08c02278-639f-41d2-ad4e-1868369d8ffc"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter2}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="60" width="149" height="20" uuid="7daaf707-37fc-4d06-89c1-19bf65c365bf"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter3}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="80" width="149" height="20" uuid="54450002-3cbc-4845-b7e1-d0792736fe79"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter4}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="100" width="149" height="20" uuid="0208143e-7ef6-4c89-a307-f9be2b8cf925"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter5}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="126" width="149" height="20" uuid="efcafd12-342a-4ee9-95f1-dbdeefc6973f"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter6}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="146" width="149" height="20" uuid="b1bb8245-82f4-4d2a-99c1-0ba8f09c4a47"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter7}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="186" width="149" height="20" uuid="33a04c78-5693-437b-9a0d-c68945f04bca"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter9}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="166" width="149" height="20" uuid="440afadd-4513-44fc-8c8f-f380a95151fe"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter8}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="232" width="149" height="20" uuid="585bdf72-865a-4f6d-97bb-c6d89e5ba760"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter11}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+			<componentElement>
+				<reportElement x="0" y="212" width="149" height="20" uuid="c630e8dd-8790-465e-a0ac-c2ff9cc52e2a"/>
+				<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Left" verticalAlign="Middle">
+					<hc:htmlContentExpression><![CDATA[$P{parameter10}]]></hc:htmlContentExpression>
+				</hc:html>
+			</componentElement>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="19" splitType="Stretch">
+			<staticText>
+				<reportElement x="249" y="0" width="58" height="19" uuid="ac3a9d8e-45cc-4e60-8a27-3c104b88122a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Op]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="0" width="100" height="19" uuid="47d99180-99db-4e86-8804-a2e61b623c39"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="149" height="19" uuid="64a70c6a-b193-402d-b87a-e0eeac1d722a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Folio de tarjeta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="0" width="75" height="19" uuid="ed334447-7625-4caf-bbf8-e7731c101a19"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Importe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="0" width="75" height="19" uuid="f51ff766-c20e-4d8b-9d83-3288a5b69e07"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Promoción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="0" width="75" height="19" uuid="04fb7b82-d8bf-4df8-9f65-ced1ea81a3ba"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="0" width="110" height="19" uuid="0ad0e2c5-f570-4bd2-8986-a9464465b375"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[F. Venta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="642" y="0" width="110" height="19" uuid="89e3c47b-efbf-4233-9c90-81e207b4dd9d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[F. Turno]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField>
+				<reportElement x="249" y="0" width="58" height="19" uuid="254d43aa-facc-4e0d-a18c-f58f2d8964bd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noOperacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="149" height="19" uuid="d415eb75-c939-471b-af8a-d7942c727a2c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{uid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="0" width="100" height="19" uuid="2983dfae-01c3-4b14-aa89-711a40482a1b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoTarjeta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="75" height="19" uuid="44f15d28-7da6-45e9-99dc-42e2c473babd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="0" width="75" height="19" uuid="18b44052-540b-4ea7-b57e-4dbdf7c95d9a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importeIvaORegalo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="0" width="75" height="19" uuid="bc5c479d-0cde-4531-a8a1-e90d1fbecd1d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importeTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="0" width="110" height="19" uuid="b3517076-b4b3-4bc2-bace-7bc98279b317"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaHoraVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="0" width="110" height="19" uuid="eca536c6-b1e0-4837-8a07-ef13fb5bff5a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaHoraTurno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="23">
+			<textField>
+				<reportElement x="642" y="0" width="110" height="23" uuid="f08a5312-8a43-44eb-a219-814ecca12b0d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
